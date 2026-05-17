@@ -1,0 +1,16 @@
+{
+  "name": "globaltna-assessment",
+  "version": "1.0.0",
+  "description": "Mini Service Request Board — GlobalTNA Full-Stack Developer Intern Assessment",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed",
+    "test": "cd backend && npm test",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
