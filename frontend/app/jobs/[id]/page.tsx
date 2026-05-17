@@ -3,7 +3,7 @@ import { useEffect, useState, use } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
-const API = process.env.NEXT_PUBLIC_API_URL;
+const API = process.env.NEXT_PUBLIC_API_URL ?? '/_/backend/api';
 const STATUSES = ['Open', 'In Progress', 'Closed'];
 
 const categoryIcons: Record<string, string> = {

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const CATEGORIES = ['All', 'Plumbing', 'Electrical', 'Painting', 'Joinery'];
 const STATUSES = ['All', 'Open', 'In Progress', 'Closed'];
-const API = process.env.NEXT_PUBLIC_API_URL;
+const API = process.env.NEXT_PUBLIC_API_URL ?? '/_/backend/api';
 
 interface Job {
   _id: string;
