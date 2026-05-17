@@ -123,6 +123,23 @@ npm run dev
 
 ---
 
+## Deploying to Vercel (Monorepo Services Mode)
+
+This repo is configured to deploy **frontend + backend** as separate services on Vercel.
+
+Important: Vercel **cannot** connect to a MongoDB running on your laptop (e.g. `mongodb://localhost:27017/...`). You must use a hosted MongoDB such as **MongoDB Atlas**.
+
+In your Vercel Project → **Settings → Environment Variables**, add:
+
+- `MONGO_URI` = your hosted MongoDB connection string (Atlas `mongodb+srv://...`)
+- `JWT_SECRET` = a long random string
+
+Then redeploy. On Vercel, the backend is mounted under `/_/backend`, so the jobs API is:
+
+- `/_/backend/api/jobs`
+
+---
+
 ## API Endpoints
 
 | Method | Endpoint | Description | Auth |
