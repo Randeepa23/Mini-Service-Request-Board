@@ -23,34 +23,34 @@ Built for the **GlobalTNA Full-Stack Developer Intern** technical assessment.
 
 ```
 globaltna-assessment/
-├── backend/                  # Express REST API
+├── backend/                  
 │   ├── models/
 │   │   ├── JobRequest.js     # JobRequest Mongoose model
 │   │   └── User.js           # User model (for JWT auth)
 │   ├── routes/
-│   │   ├── jobs.js           # CRUD routes for /api/jobs
-│   │   └── auth.js           # Register + Login routes
+│   │   ├── jobs.js           
+│   │   └── auth.js           
 │   ├── middleware/
 │   │   └── auth.js           # JWT verification middleware
 │   ├── __tests__/
 │   │   └── jobs.test.js      # API endpoint unit tests
 │   ├── app.js                # Express app factory (for testing)
 │   ├── server.js             # Entry point — connects DB + starts server
-│   ├── seed.js               # Seeds 10 sample jobs
-│   └── .env                  # Environment variables
-├── frontend/                 # Next.js frontend
+│   ├── seed.js               
+│   └── .env                  
+├── frontend/                 
 │   ├── app/
 │   │   ├── page.tsx          # Home — job list with filters
 │   │   ├── layout.tsx        # Root layout with metadata
-│   │   ├── globals.css       # Global styles + design tokens
+│   │   ├── globals.css       
 │   │   ├── jobs/
-│   │   │   ├── new/page.tsx  # New job creation form
+│   │   │   ├── new/page.tsx  
 │   │   │   └── [id]/page.tsx # Job detail + status update + delete
 │   │   └── auth/page.tsx     # Login / Register page
-│   └── .env.local            # API URL config
+│   └── .env.local            
 ├── .gitignore
-├── package.json              # Root convenience scripts
-└── README.md                 # ← You are here
+├── package.json              
+└── README.md                 
 ```
 
 ---
@@ -58,7 +58,7 @@ globaltna-assessment/
 ## Prerequisites
 
 - **Node.js** ≥ 18
-- **MongoDB** — either a [local install](https://www.mongodb.com/docs/manual/installation/) or a free [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cluster
+- **MongoDB** — [local install](https://www.mongodb.com/docs/manual/installation/) 
 
 ---
 
